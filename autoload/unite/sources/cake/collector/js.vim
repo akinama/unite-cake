@@ -1,7 +1,6 @@
 "
 " gather candidates
 "
-function! unite#sources#ethna#collector#js#candidates(source)
-  return unite#sources#ethna#helper#gather_candidates_file('webroot/js')
+function! unite#sources#cake#collector#js#candidates(source)
+  return unite#sources#cake#helper#gather_candidates_file('webroot/js')
 endfunction
-

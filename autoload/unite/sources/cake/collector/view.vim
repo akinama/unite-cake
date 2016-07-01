@@ -1,6 +1,6 @@
 "
 " gather candidates
 "
-function! unite#sources#ethna#collector#view#candidates(source)
-  return unite#sources#ethna#helper#gather_candidates_file('src/View')
+function! unite#sources#cake#collector#view#candidates(source)
+  return unite#sources#cake#helper#gather_candidates_file('src/View')
 endfunction
