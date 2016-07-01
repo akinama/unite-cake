@@ -8,7 +8,7 @@ function! unite#sources#cake#helper#gather_candidates_file(path)
       for f in split(globpath(d, '**/*.*') , '\n')
         if isdirectory(f) | continue | endif
         call add(files , 
-              \ {'name' : substitute(f , ".*\/Service\/" , "" , "") , 'path' : f })
+              \ {'name' : substitute(f , ".*\/src\/" , "" , "") , 'path' : f })
       endfor
     else
       let files = [{
@@ -77,7 +77,7 @@ endfunction
 " get cake root directory
 "
 function! unite#sources#cake#helper#cake_root()
-  let dir = finddir("Service" , ".;")
+  let dir = finddir("src" , ".;")
   if dir == "" | return "" | endif
   return  dir . "/../" 
 endfunction
